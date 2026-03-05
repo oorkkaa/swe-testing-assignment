@@ -1,5 +1,14 @@
 from calculator_logic import add, subtract, multiply, divide
 
+def process_operation(num1, op, num2):
+    match op:
+        case '+': return add(num1, num2)
+        case '-': return subtract(num1, num2)
+        case '*': return multiply(num1, num2)
+        case '/': return divide(num1, num2)
+        case _: return "Error"
+
+
 def main():
     print("calculator app by Orkhan Sultanov 231ADB131")
 
